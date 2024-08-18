@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.section p {
+  color: red;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
