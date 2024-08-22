@@ -1,0 +1,82 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main-section {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 5px 5px 0px 0px rgba(100, 100, 100, 0.1);
+  background: #ff6666;
+  color: #fff;
+}
+
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input,
+button {
+  cursor: pointer;
+}
+
+#to-do-list ul {
+  padding-left: 0;
+}
+
+#to-do-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+li.none {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  color: #fff;
+}
+
+.incomplete-tasks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form label {
+  min-width: 100%;
+  margin-bottom: 16px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 10px 0;
+}

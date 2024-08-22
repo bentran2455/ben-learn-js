@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do lis project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div id="main-section">
+        <header>
+          <h1>Todo list</h1>
+          <span>Get things done, one item at a time</span>
+        </header>
+        <div id="to-do-list">
+          <ul>
+            <li>
+              <p>Learn Javascript</p>
+              <div class="actions">
+                <input type="checkbox" class="btn-action-done" />
+                <button class="btn-action-delete">&#10008;</button>
+              </div>
+            </li>
+            <li>
+              <p>Code a to do list</p>
+              <div class="actions">
+                <input type="checkbox" class="btn-action-done" />
+                <button class="btn-action-delete">&#10008;</button>
+              </div>
+            </li>
+          </ul>
+          <div class="incomplete-tasks">
+            <label for="filter" class="filter-label"
+              >Show incomplete tasks only</label
+            >
+            <input id="filter" type="checkbox" class="btn-action-filter" />
+          </div>
+          <form action="#" class="form">
+            <label for="add-item">Add to the to do list</label>
+            <input type="text" id="add-item" placeholder="Add your item here" />
+            <button type="submit" onClick="addItem()" id="add-btn">
+              Add item
+            </button>
+          </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
